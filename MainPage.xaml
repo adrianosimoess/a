@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:ListaCidadeApp" 
+             x:Class="ListaCidadeApp.MainPage">
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Entry Placeholder="Digite a cidade" x:Name="ncidade"
+               Margin="20,10,20,20"/>
+        
+        <Entry Placeholder="Digite o estado" x:Name="nuf"
+               Margin="20,10,20,20"/>
+            
+        <Button Text="Adicionar do Campo"
+                Font="20"
+                HorizontalOptions="Center" 
+                VerticalOptions="CenterAndExpand"
+                BackgroundColor="Fuchsia"
+                TextColor="Red"
+                Clicked="Handle_Clicked"/>
+                
+        <Button Text="Checar Lista"
+               HorizontalOptions="Center" 
+               VerticalOptions="CenterAndExpand" 
+               Clicked="Handle_Clicked_1"/>
+                
+    </StackLayout>
+</ContentPage>
